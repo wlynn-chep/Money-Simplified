@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Simplified | Save</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Saving Tips</h1>
+      <p>Master the art of saving and build your financial cushion</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="tricks.html">Money Tricks</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="save-goal">
+      <h2>Set Your Saving Goal</h2>
+      <form id="goal-form">
+        <label for="saving-goal">Saving Goal (KES):</label>
+        <input type="number" id="saving-goal" required />
+        <button type="submit">Set Goal</button>
+      </form>
+    </section>
+  
+    <section class="add-savings">
+      <h2>Add to Your Savings</h2>
+      <form id="saving-form">
+        <label for="saving-amount">Amount Saved (KES):</label>
+        <input type="number" id="saving-amount" required />
+        <button type="submit">Add Saving</button>
+      </form>
+    </section>
+  
+    <section class="savings-summary">
+      <h3>Savings Progress</h3>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar" style="width: 0%">0%</div>
+      </div>
+      <p id="savings-status">Total Saved: KES 0 | Remaining: KES 0</p>
+    </section>
+    <section class="testimonials">
+      <h2>Success Stories</h2>
+      <div class="testimonial">
+        <p>"I started with just 500 KES a week. In 6 months, I saved enough to buy a new laptop!"</p>
+        <span>- James, Nairobi</span>
+      </div>
+      <div class="testimonial">
+        <p>"Using Money Simplified helped me clear a small debt and start saving for my daughter’s school fees."</p>
+        <span>- Mercy, Kisumu</span>
+      </div>
+      <div class="testimonial">
+        <p>"I never thought I could stick to saving. The goal tracker kept me motivated!"</p>
+        <span>- Brian, Mombasa</span>
+      </div>
+    </section>
+    
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Money Simplified. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

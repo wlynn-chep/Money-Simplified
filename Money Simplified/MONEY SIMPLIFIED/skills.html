@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Simplified | Skills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Skill Tracker</h1>
+      <p>Build and track the skills that can earn you more</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="save.html">Save</a></li>
+      <li><a href="invest.html">Invest</a></li>
+      <li><a href="tricks.html">Money Tricks</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>What Are You Good At?</h2>
+      <p>Write down your skills. This can help you explore side hustles, freelance opportunities, or new jobs.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="skills-form">
+        <label for="skill">Enter a Skill:</label>
+        <input type="text" id="skill" name="skill" required placeholder="e.g. Graphic Design, Cooking, Coding">
+        <button type="submit">Add Skill</button>
+      </form>
+
+      <div class="skills-display">
+        <h3>Your Skills</h3>
+        <ul id="skills-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Money Simplified. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("skills-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const skillInput = document.getElementById("skill");
+      const skillValue = skillInput.value.trim();
+      if (skillValue) {
+        const skillList = document.getElementById("skills-list");
+        const listItem = document.createElement("li");
+        listItem.textContent = skillValue;
+        skillList.appendChild(listItem);
+        skillInput.value = "";
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
